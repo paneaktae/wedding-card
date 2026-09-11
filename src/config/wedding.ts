@@ -1,6 +1,6 @@
 // All event content lives here. Replace the sample photos/story and add real contacts before sharing.
 export const weddingConfig = {
-  groomName: "Terabat",
+  groomName: "Teravat",
   brideName: "Vorada",
   weddingDate: "2027-07-10T18:00:00+07:00",
   endDate: "2027-07-10T22:00:00+07:00",
@@ -72,26 +72,21 @@ export const weddingConfig = {
     },
   ],
   photosAreSamples: true,
-  storyIsSample: true,
+  storyIsSample: false,
   timeline: [
     {
-      year: "2022",
-      title: "First met",
+      year: "2025",
+      title: "FIRST MET",
       text: "Two paths crossed. A new story began.",
     },
     {
-      year: "2024",
-      title: "Our journey",
-      text: "Finding a little magic in the everyday.",
-    },
-    {
       year: "2026",
-      title: "She said yes",
+      title: "OUR JOURNEY - SHE SAID YES",
       text: "A simple question. A beautiful forever.",
     },
     {
       year: "2027",
-      title: "Our wedding day",
+      title: "OUR WEDDING DAY",
       text: "The next chapter, with you by our side.",
     },
   ],

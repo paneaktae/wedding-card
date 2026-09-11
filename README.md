@@ -1,4 +1,4 @@
-# Terabat & Vorada — Wedding invitation
+# Teravat & Vorada — Wedding invitation
 
 Mobile-first editorial wedding invitation, built with Next.js App Router, React, TypeScript and Tailwind CSS. Date: **Saturday 10 July 2027, 18:00–22:00, Asia/Bangkok**. Venue: **Mellow Garden Restaurant & Bakery**.
 
@@ -17,7 +17,7 @@ npm start
 Edit `src/config/wedding.ts` for the couple’s names, date, venue, Google Maps links, dress colors, schedule, story, photos and contacts. Dates use explicit `+07:00` offsets, and all displayed dates use `Asia/Bangkok` regardless of a guest’s device time zone.
 
 - Current photography comes from Unsplash and is **sample imagery**, not the couple’s own photos. Add approved photographs under `public/images/`, change the image paths in the config and set `photosAreSamples` to `false`.
-- Story milestones are **examples from the brief**. Replace them with the couple’s actual story and set `storyIsSample` to `false`.
+- Story milestones: 2025 FIRST MET; 2026 OUR JOURNEY - SHE SAID YES; 2027 OUR WEDDING DAY.
 - Phone numbers and LINE URLs are empty intentionally; no fake contact buttons are shown. Add real values in `contact`.
 - Set `musicUrl` to a licensed audio path to use a particular song. With no path, the button plays a simple original synthesized chime sequence. Audio never starts automatically.
 

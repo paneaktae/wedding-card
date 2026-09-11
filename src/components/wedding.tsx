@@ -156,7 +156,7 @@ export function SaveTheDate() {
       "VERSION:2.0",
       "PRODID:-//Wedding Invitation//EN",
       "BEGIN:VEVENT",
-      `UID:${stamp(w.weddingDate)}-terabat-vorada@wedding.local`,
+      `UID:${stamp(w.weddingDate)}-teravat-vorada@wedding.local`,
       `DTSTAMP:${stamp(new Date().toISOString())}`,
       `DTSTART:${stamp(w.weddingDate)}`,
       `DTEND:${stamp(w.endDate)}`,
@@ -170,7 +170,7 @@ export function SaveTheDate() {
     );
     const a = document.createElement("a");
     a.href = url;
-    a.download = "terabat-vorada-wedding.ics";
+    a.download = "teravat-vorada-wedding.ics";
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
