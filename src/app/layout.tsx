@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope, Noto_Sans_Thai, Roboto_Mono } from "next/font/google";
+import { Cormorant_Garamond, Manrope, Noto_Sans_Thai, Quicksand } from "next/font/google";
 import "./globals.css";
 import { weddingConfig as w, eventDateParts } from "@/config/wedding";
 const serif = Cormorant_Garamond({
@@ -9,7 +9,7 @@ const serif = Cormorant_Garamond({
   variable: "--font-serif",
 });
 const sans = Manrope({ subsets: ["latin"], variable: "--font-sans" });
-const numbers = Roboto_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-numbers" });
+const numbers = Quicksand({ subsets: ["latin"], weight: ["500", "600"], variable: "--font-numbers" });
 const thai = Noto_Sans_Thai({
   subsets: ["thai"],
   weight: ["300", "400", "500"],
