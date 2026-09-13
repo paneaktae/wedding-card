@@ -43,11 +43,11 @@ export const weddingConfig = {
     },
   ],
   dressCodeColors: [
-    { name: "Ivory", hex: "#EFEBE1" },
-    { name: "Beige", hex: "#D6C9B4" },
-    { name: "Sage", hex: "#A8B3A0" },
-    { name: "Champagne", hex: "#C4AF87" },
-    { name: "Earth", hex: "#8B7965" },
+    { name: "Cream", hex: "#FFF2D4" },
+    { name: "Sunflower", hex: "#EDC044" },
+    { name: "Honey", hex: "#C99345" },
+    { name: "Olive", hex: "#92975C" },
+    { name: "Mocha", hex: "#947056" },
   ],
   heroImage: {
     src: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=85",

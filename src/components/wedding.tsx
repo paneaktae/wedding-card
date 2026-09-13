@@ -33,9 +33,20 @@ function Botanical({ className = "" }: { className?: string }) {
       fill="none"
       aria-hidden="true"
     >
-      <g stroke="currentColor" strokeWidth="1">
-        <path d="M80 254C118 175 57 100 107 9M93 211C57 182 35 161 25 117M94 166C127 143 145 104 147 73M87 125C55 102 47 67 55 36" />
-        <path d="M96 46C120 45 130 24 128 10C108 14 96 27 96 46ZM91 69C69 57 73 34 81 22C95 37 99 50 91 69ZM87 96C112 91 119 72 118 59C96 63 89 78 87 96ZM92 127C76 112 71 95 76 80C91 91 98 105 92 127ZM95 155C120 148 128 134 126 119C110 124 101 137 95 155ZM39 154C19 152 10 135 12 124C28 128 39 138 39 154ZM56 178C62 157 52 145 42 139C37 155 43 169 56 178ZM72 191C56 197 39 188 35 174C53 173 65 180 72 191ZM120 140C113 120 122 106 133 101C136 118 130 130 120 140ZM139 103C157 98 162 82 157 70C144 78 138 90 139 103ZM66 86C74 67 69 54 59 46C53 62 56 75 66 86ZM88 226C107 227 125 216 125 201C104 203 94 214 88 226Z" />
+      <g stroke="#7f884b" strokeWidth="2" strokeLinecap="round">
+        <path d="M90 245C103 195 73 140 91 85" />
+        <path d="M91 195C59 195 36 172 34 148C63 148 85 166 91 195Z" fill="#b1ac68" />
+        <path d="M91 164C118 160 140 139 143 117C117 119 97 139 91 164Z" fill="#969a57" />
+        <path d="M42 156L86 189M136 125L96 158" stroke="#788045" strokeWidth="1" />
+      </g>
+      <g>
+        {Array.from({ length: 16 }, (_, i) => (
+          <ellipse key={i} cx="90" cy="43" rx="9" ry="29" transform={`rotate(${i * 22.5} 90 79)`} fill={i % 2 ? "#efc34f" : "#e4ac31"} stroke="#d69b2d" strokeWidth=".6" />
+        ))}
+        <circle cx="90" cy="79" r="25" fill="#765031" />
+        <circle cx="90" cy="79" r="19" fill="#8c623b" stroke="#b18a4d" strokeWidth="1.5" strokeDasharray="1 4" />
+        <circle cx="90" cy="79" r="12" fill="none" stroke="#d0a363" strokeWidth="2" strokeDasharray="1 5" />
+        <circle cx="90" cy="79" r="5" fill="#67442b" />
       </g>
     </svg>
   );
@@ -72,6 +83,7 @@ export function Hero() {
         />
       </div>
       <div className="hero-shade" />
+      <Botanical className="hero-sunflower" />
       <div className="hero-content">
         <Kicker>THE WEDDING CELEBRATION OF</Kicker>
         <h1 id="couple">
@@ -303,7 +315,7 @@ export function DressCode() {
   return (
     <section className="section dress-code">
       <div className="reveal">
-        <Kicker>A SOFT, EARTHY PALETTE</Kicker>
+        <Kicker>A LITTLE SUNSHINE, A LITTLE WARMTH</Kicker>
         <h2>
           Dress <em>with love</em>
         </h2>
