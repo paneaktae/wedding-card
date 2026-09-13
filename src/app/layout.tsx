@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope, Noto_Sans_Thai } from "next/font/google";
+import { Cormorant_Garamond, Manrope, Noto_Sans_Thai, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import { weddingConfig as w, eventDateParts } from "@/config/wedding";
 const serif = Cormorant_Garamond({
@@ -9,13 +9,14 @@ const serif = Cormorant_Garamond({
   variable: "--font-serif",
 });
 const sans = Manrope({ subsets: ["latin"], variable: "--font-sans" });
+const numbers = Roboto_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-numbers" });
 const thai = Noto_Sans_Thai({
   subsets: ["thai"],
   weight: ["300", "400", "500"],
   variable: "--font-thai",
 });
 export const metadata: Metadata = {
-  title: `${w.groomName} & ${w.brideName} — A celebration of love`,
+  title: `${w.brideName} & ${w.groomName} — A celebration of love`,
   description: `Join us on ${eventDateParts().short} at ${w.venueFullName}. Our wedding invitation, schedule, directions and RSVP.`,
   robots: { index: false, follow: false },
 };
@@ -24,7 +25,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${serif.variable} ${sans.variable} ${thai.variable}`}>
+      <body className={`${serif.variable} ${sans.variable} ${thai.variable} ${numbers.variable}`}>
         {children}
       </body>
     </html>

@@ -1545,3 +1545,18 @@ input[type="radio"] {
 .button-dark { background:#79512e; }
 .rsvp-form-wrap { box-shadow:0 10px 35px #a8741c08; }
 @media(max-width:600px) { .hero-sunflower{width:105px;height:155px;right:-15px;bottom:20px;opacity:.5;} .intro-leaf{opacity:.4;} }
+
+/* Consistent, upright numerals with a distinct flag and baseline on 1. */
+.hero-date, .date-display, .date-display strong, .countdown strong,
+.ceremony-card .ceremony-date, .ceremony-card .ceremony-time, .timezone,
+.schedule-item time, .story-year, .guest-count button,
+.contact-links a[href^="tel:"], .footer .kicker, .lightbox-controls p {
+  font-family:var(--font-numbers), "Courier New", monospace;
+  font-variant-numeric:lining-nums tabular-nums;
+  font-style:normal;
+  font-weight:400;
+}
+.date-display strong { font-weight:500; letter-spacing:-.06em; }
+.countdown strong, .story-year, .guest-count button { font-weight:500; }
+
+@media(max-width:600px){ .date-display strong{font-size:76px;padding:0 14px;} .story-year{font-size:25px;} }

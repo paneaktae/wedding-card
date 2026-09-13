@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 import { weddingConfig as w, eventDateParts } from "@/config/wedding";
 const d = eventDateParts();
-const monogram = `${w.groomName[0]} & ${w.brideName[0]}`;
+const monogram = `${w.brideName[0]} & ${w.groomName[0]}`;
 
 function Botanical({ className = "" }: { className?: string }) {
   return (
@@ -84,9 +84,9 @@ export function Hero() {
       <div className="hero-content">
         <Kicker>THE WEDDING CELEBRATION OF</Kicker>
         <h1 id="couple">
-          <span>{w.groomName}</span>
-          <em>&</em>
           <span>{w.brideName}</span>
+          <em>&</em>
+          <span>{w.groomName}</span>
         </h1>
         <p className="hero-invitation">{w.invitation}</p>
         <div className="hero-date">
@@ -123,7 +123,7 @@ export function WeddingIntro() {
           {w.introduction}
         </p>
         <p className="signature">
-          {w.groomName} <span>&</span> {w.brideName}
+          {w.brideName} <span>&</span> {w.groomName}
         </p>
         <Heart className="small-heart" size={17} strokeWidth={1} />
       </div>
@@ -169,7 +169,7 @@ export function SaveTheDate() {
       `DTSTAMP:${stamp(new Date().toISOString())}`,
       `DTSTART:${stamp(w.weddingDate)}`,
       `DTEND:${stamp(w.endDate)}`,
-      `SUMMARY:${escape(`${w.groomName} & ${w.brideName}'s wedding`)}`,
+      `SUMMARY:${escape(`${w.brideName} & ${w.groomName}'s wedding`)}`,
       `LOCATION:${escape(w.venueFullName)}`,
       "END:VEVENT",
       "END:VCALENDAR",
@@ -179,7 +179,7 @@ export function SaveTheDate() {
     );
     const a = document.createElement("a");
     a.href = url;
-    a.download = "teravat-vorada-wedding.ics";
+    a.download = "vorada-teravat-wedding.ics";
     a.click();
     setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
@@ -732,7 +732,7 @@ export function Footer() {
     <footer className="footer">
       <span className="monogram">{monogram}</span>
       <p className="footer-names">
-        {w.groomName} & {w.brideName}
+        {w.brideName} & {w.groomName}
       </p>
       <p className="kicker">
         {d.date} {d.month} {d.year}
