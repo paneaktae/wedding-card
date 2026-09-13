@@ -33,20 +33,17 @@ function Botanical({ className = "" }: { className?: string }) {
       fill="none"
       aria-hidden="true"
     >
-      <g stroke="#7f884b" strokeWidth="2" strokeLinecap="round">
-        <path d="M90 245C103 195 73 140 91 85" />
-        <path d="M91 195C59 195 36 172 34 148C63 148 85 166 91 195Z" fill="#b1ac68" />
-        <path d="M91 164C118 160 140 139 143 117C117 119 97 139 91 164Z" fill="#969a57" />
-        <path d="M42 156L86 189M136 125L96 158" stroke="#788045" strokeWidth="1" />
-      </g>
-      <g>
-        {Array.from({ length: 16 }, (_, i) => (
-          <ellipse key={i} cx="90" cy="43" rx="9" ry="29" transform={`rotate(${i * 22.5} 90 79)`} fill={i % 2 ? "#efc34f" : "#e4ac31"} stroke="#d69b2d" strokeWidth=".6" />
+      <g stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M90 245C103 195 73 140 91 105" />
+        <path d="M91 195C59 195 36 172 34 148C63 148 85 166 91 195Z" />
+        <path d="M91 164C118 160 140 139 143 117C117 119 97 139 91 164Z" />
+        <path d="M42 156L86 189M136 125L96 158" />
+        {Array.from({ length: 12 }, (_, i) => (
+          <path key={i} d="M84 56C75 39 79 19 90 10C101 24 104 40 96 56" transform={`rotate(${i * 30} 90 79)`} />
         ))}
-        <circle cx="90" cy="79" r="25" fill="#765031" />
-        <circle cx="90" cy="79" r="19" fill="#8c623b" stroke="#b18a4d" strokeWidth="1.5" strokeDasharray="1 4" />
-        <circle cx="90" cy="79" r="12" fill="none" stroke="#d0a363" strokeWidth="2" strokeDasharray="1 5" />
-        <circle cx="90" cy="79" r="5" fill="#67442b" />
+        <circle cx="90" cy="79" r="25" />
+        <circle cx="90" cy="79" r="18" strokeWidth=".8" strokeDasharray="1 4" />
+        <circle cx="90" cy="79" r="10" strokeWidth=".8" strokeDasharray="1 5" />
       </g>
     </svg>
   );

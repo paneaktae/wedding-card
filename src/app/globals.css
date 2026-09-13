@@ -391,7 +391,9 @@ p {
   text-align: left;
 }
 .date-display strong {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans), sans-serif;
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: -0.045em;
   font-size: 110px;
   line-height: 1.1;
   font-weight: 300;
@@ -1532,13 +1534,14 @@ input[type="radio"] {
   border-left: 2px solid var(--sage);
 }
 
-/* Sunflower accents: warm petals, toasted centers and quiet olive leaves. */
-.hero-sunflower { position:absolute; width:190px; height:275px; right:3%; bottom:35px; opacity:.85; transform:rotate(16deg); }
-.intro-leaf { opacity:.8; }
+/* Delicate sunflower linework in a single warm honey tone. */
+.hero-sunflower { position:absolute; width:190px; height:275px; right:3%; bottom:35px; opacity:.55; transform:rotate(16deg); }
+.botanical { color:#b39360; }
+.intro-leaf { opacity:.55; }
 .ceremony-card { background:radial-gradient(ellipse at top,#fff7df,#fae8bd); border-color:#dfbd79; }
 .save-date { background:radial-gradient(ellipse at 50% 0%,#fff4d9,#f5e2b9); }
 .gallery-photo img { filter:sepia(.16) saturate(.8); }
 .gallery-photo:hover img { filter:sepia(.08) saturate(1); }
 .button-dark { background:#79512e; }
 .rsvp-form-wrap { box-shadow:0 10px 35px #a8741c08; }
-@media(max-width:600px) { .hero-sunflower{width:105px;height:155px;right:-15px;bottom:20px;opacity:.7;} .intro-leaf{opacity:.5;} }
+@media(max-width:600px) { .hero-sunflower{width:105px;height:155px;right:-15px;bottom:20px;opacity:.5;} .intro-leaf{opacity:.4;} }
